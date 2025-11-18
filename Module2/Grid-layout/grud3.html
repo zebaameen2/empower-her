@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Masai Calculator</title>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      background: #f8f8f8;
+    }
+
+    h1 {
+      color: #2e6f6f;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .calculator {
+      background: white;
+      padding: 25px;
+      width: 260px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .display {
+      width: 100%;
+      height: 50px;
+      font-size: 22px;
+      border-radius: 10px;
+      border: none;
+      background: #f2f2f2;
+      margin-bottom: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .keys {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    button {
+      height: 45px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background: #f2f2f2;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    /* Number buttons */
+    .num {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+    }
+
+    /* Operator buttons */
+    .op {
+      background: #000000;
+      color: white;
+    }
+
+    /* Clear button */
+    .clear {
+      background: #e63946;
+      color: white;
+    }
+
+    /* Equal button */
+    .equal {
+      background: #000000;
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Masai Calculator</h1>
+
+  <div class="calculator">
+    <input type="text" class="display" disabled id="display">
+
+    <div class="keys">
+      <!-- Row 1 -->
+      <button class="num">1</button>
+      <button class="num">2</button>
+      <button class="num">3</button>
+      <button class="op">+</button>
+
+      <!-- Row 2 -->
+      <button class="num">4</button>
+      <button class="num">5</button>
+      <button class="num">6</button>
+      <button class="op">-</button>
+
+      <!-- Row 3 -->
+      <button class="num">7</button>
+      <button class="num">8</button>
+      <button class="num">9</button>
+      <button class="op">x</button>
+
+      <!-- Row 4 -->
+      <button class="clear">C</button>
+      <button class="num">0</button>
+      <button class="equal">=</button>
+      <button class="op">/</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
