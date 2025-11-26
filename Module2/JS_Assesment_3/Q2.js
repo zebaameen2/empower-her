@@ -7,8 +7,13 @@ function createCounter() {
     return counter;
 }       
 module.exports = createCounter;
-// Example usage:
+
  const myCounter = createCounter();
     console.log(myCounter()); // Output: 1  
     console.log(myCounter()); // Output: 2
 console.log(myCounter()); // Output: 3
+
+
+
+
+
