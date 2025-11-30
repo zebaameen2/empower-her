@@ -4,4 +4,5 @@ function timer( duration, onCompete){
   },duration)
 
 }
+
 timer(2000, msg=> console.log(msg))
